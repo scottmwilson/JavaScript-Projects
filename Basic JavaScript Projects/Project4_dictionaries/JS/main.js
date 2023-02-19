@@ -7,4 +7,4 @@ function my_Dictionary() {
         Sound: "Bark!"
     };
     document.getElementById("my_Dictionary").innerHTML.HTML = Animal.Sound;
-}
+} 
