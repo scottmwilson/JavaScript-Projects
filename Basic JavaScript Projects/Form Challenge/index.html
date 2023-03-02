@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+
+<link rel="stylesheet" href="./Pop_Contact_Form.css"></link>
+
+</script>
+
+<body>
+    <h2>Phone Number</h2>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Scott"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Wilson">
+  <label for="fname">Phone Number:</label><br>
+  <input type="text" id="fname" name="fname" value="867-5309"><br>
+</form>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+    </form>
+
+<!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<h1>HTML Links</h1>
+
+<p><a href="https://www.w3schools.com/">Visit W3Schools.com!</a></p>
+
+<div id="slideshow">
+  <div>
+    <img src="//farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
+  </div>
+  <div>
+    <img src="//farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
+  </div>
+  <div>
+    Pretty cool eh? This slide is proof the content can be anything.
+  </div>
+</div>
+
+<h2>Sticky Element: Scroll Down to See the Effect</h2>
+<p>Scroll down this page to see how  sticky positioning works.</p>
+<div class="sticky">I will stick to the screen when you reach my scroll position</div>
+
+<!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">Open Form</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+</body>
+
+<script src="./JS/form.js"></script>
+
+</html>
